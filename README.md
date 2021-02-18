@@ -1,5 +1,5 @@
 # metallb-dropvault
-loadbalancer-reverse proxy pour dropvault
+loadbalancer pour dropvault
 
 # Lancement du metallb
 
@@ -18,6 +18,11 @@ open nginx-webtest folder and launch the follow requests
 $ kubectl apply -f nginx-deployment.yaml
 $ kubectl apply -f nginx-service.yaml
 
+get the ip of the Nginx service to acces the application
 
+$ kubectl get svc
+
+and browse with a curl
+$ curl http://192.168.1.?:80
 
 
